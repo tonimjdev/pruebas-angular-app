@@ -1,0 +1,15 @@
+
+<p>Empresa: <span style="font-weight: bold"> {{empresa}}</span> </p>
+
+<p>Introduce la empresa
+<input type="text" [(ngModel)]="empresa"/>
+</p>
+<hr>
+
+<p style="font-weight: bold; padding: 1em; width: 200px; color: #fff" [ngStyle]="{'background-color': textoCheck=='Check SÍ está seleccionado' ? 'green' : 'red'}">{{textoCheck}}</p>
+Registrado: <input type="radio" name="nRegistro" value="si"  (click)="marcarCheck($event)"/>
+<br>
+No Registrado: <input type="radio" name="nRegistro" value="no"  (click)="marcarCheck($event)"/>
+<br><br>
+<hr>
+<app-componente2></app-componente2>
