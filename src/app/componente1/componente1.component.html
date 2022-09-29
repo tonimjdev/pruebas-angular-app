@@ -1,11 +1,11 @@
-
+<h3> *ngModel - Banana in box [()] - bidireccional</h3>
 <p>Empresa: <span style="font-weight: bold"> {{empresa}}</span> </p>
 
 <p>Introduce la empresa
-<input type="text" [(ngModel)]="empresa"/>
+<input type="text" [(ngModel)]="empresa"/> <!-- Banana in box [()]-->
 </p>
 <hr>
-
+<h3>Directiva *ngStyle</h3>
 <p style="font-weight: bold; padding: 1em; width: 200px; color: #fff" [ngStyle]="{'background-color': textoCheck=='Check SÍ está seleccionado' ? 'green' : 'red'}">{{textoCheck}}</p>
 Registrado: <input type="radio" name="nRegistro" value="si"  (click)="marcarCheck($event)"/>
 <br>
@@ -13,3 +13,5 @@ No Registrado: <input type="radio" name="nRegistro" value="no"  (click)="marcarC
 <br><br>
 <hr>
 <app-componente2></app-componente2>
+<hr>
+<app-directivas1></app-directivas1>

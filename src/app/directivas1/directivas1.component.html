@@ -1,0 +1,9 @@
+<h3> Directiva *ngIf </h3>
+<input type="text" name="nombre"/><br>
+<input type="text" name="apellido"/><br>
+<button name="registrar" (click)="usuarioRegistrado()">Registrar</button>
+<p *ngIf="registrado"> {{mensaje}} </p>
+<hr>
+
+<h3> Comunicación componentes padre-hijo @Input</h3>
+<app-directivas-hijo *ngFor="let banda of bandas; let i = index" [bandaDeLista]="banda" [indice]="i" ></app-directivas-hijo>
